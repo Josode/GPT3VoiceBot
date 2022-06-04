@@ -1,7 +1,7 @@
 import openai
 import pyttsx3
 import speech_recognition as sr
-from api_secrets import API_KEY
+from api_key import API_KEY
 
 
 openai.api_key = API_KEY
