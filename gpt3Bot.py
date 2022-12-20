@@ -33,7 +33,7 @@ while True:
     conversation += prompt  # allows for context
 
     # fetch response from open AI api
-    response = openai.Completion.create(engine='text-davinci-001', prompt=conversation, max_tokens=100)
+    response = openai.Completion.create(engine='text-davinci-003', prompt=conversation, max_tokens=100)
     response_str = response["choices"][0]["text"].replace("\n", "")
     response_str = response_str.split(user_name + ": ", 1)[0].split(bot_name + ": ", 1)[0]
 
